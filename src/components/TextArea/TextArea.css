@@ -1,0 +1,45 @@
+.TextareaContainer {
+    box-sizing: border-box;
+    position: relative;
+    width: 80vw;
+    left: 10vw;
+    font-family: roboto, sans-serif;
+  }
+  
+  .TextareaContainer textarea {
+    width: 100%;
+    background: transparent;
+    outline: none;
+    border: none;
+    color: white;
+    padding: 8px;
+    resize: none;
+  }
+  
+  .TextareaContainer label {
+    position: absolute;
+    left: 0;
+    bottom: 1rem;
+    color: rgba(255, 255, 255, 0.7);
+    text-transform: uppercase;
+    pointer-events: none;
+    transition: .5s;
+    font-weight: bold;
+  }
+  
+  .TextareaContainer textarea:valid ~ label,
+  .TextareaContainer textarea:focus ~ label {
+    color: #EF9CA6;
+    transform: translateY(-3rem);
+    font-size: .6rem;
+  }
+  
+  .TextareaContainer span {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2.5px;
+    background: #EF9CA6;
+  }
+  

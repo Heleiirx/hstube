@@ -1,0 +1,28 @@
+.Video{
+    width: 40vw;
+}
+.Video img{
+    width: 40vw;
+    &:hover, &:focus{
+        box-sizing: border-box;
+        border: solid #EF9CA6 .2rem;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .Video{
+        width: 30vw;
+    }
+    .Video img{
+        width: 31vw;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .Video{
+        width: 23.5vw;
+    }
+    .Video img{
+        width: 23.5vw;
+    }
+}

@@ -1,0 +1,6 @@
+.home{
+    margin-top: 8vh;
+     position: relative;
+     display: flex;
+     flex-direction: column;
+}

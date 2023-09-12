@@ -1,0 +1,27 @@
+.carousel{
+    position: relative;
+    box-sizing: border-box;
+    margin-left: 1rem;
+}
+.swiper-button-next, .swiper-button-prev{
+    display: none;
+}
+.swiper-slide{
+    width: 45vw;
+    box-sizing: border-box;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .swiper-slide{
+        width: 20vw;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .swiper-slide{
+        width: 23vw;
+    }
+    .swiper-button-next, .swiper-button-prev{
+        display: inline-block;
+    }
+}

@@ -1,0 +1,16 @@
+.VideoMid{
+    display: none;
+}
+
+@media screen and (min-width: 1024px) {
+    .VideoMid{
+        width: 40vw;
+        display: inline-block;
+        position: absolute;
+        right: 5rem;
+        bottom: 1.5rem;
+    }
+    .VideoMid img{
+        width: 35vw;
+    }
+}

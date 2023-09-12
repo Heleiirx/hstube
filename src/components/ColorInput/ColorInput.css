@@ -1,0 +1,44 @@
+.ColorInput {
+    position: relative;
+    width: 80vw;
+    left: 10vw;
+    font-family: roboto, sans-serif;
+  }
+  
+  .ColorInput input {
+    width: 100%;
+    height: 3rem;
+    background: transparent;
+    outline: none;
+    border: none;
+    color: white;
+    padding: 8px;
+  }
+  
+  .ColorInput label {
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: rgba(255, 255, 255, 0.7);
+    text-transform: uppercase;
+    pointer-events: none;
+    transition: .5s;
+    font-weight: bold;
+  }
+  
+  .ColorInput input:valid ~ label,
+  .ColorInput input:focus ~ label {
+    color: #EF9CA6;
+    transform: translateY(-15px);
+    font-size: .6rem;
+  }
+  
+  .ColorInput span {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2.5px;
+    background: #EF9CA6;
+  }
+  

@@ -1,0 +1,18 @@
+.VideoForm{
+    box-sizing: border-box;
+    width: 100vw;
+    height: 90vh;
+    margin: 6ch 0;
+    font-family: roboto, sans-serif;
+    color: #EF9CA6;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.VideoForm h1{
+    text-align: center;
+}
+.VideoForm section{
+    display: flex;
+    justify-content: space-evenly;
+}

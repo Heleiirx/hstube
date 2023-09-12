@@ -1,0 +1,75 @@
+
+@font-face {
+    font-family: Champion;
+    src: url(../../assets/Champion\ Gothic\ Heavyweight.otf);
+}
+
+.page404{
+    margin: 7vh 0;
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.page404 h1{
+    font-family: Champion, sans-serif;
+    color: white;
+    font-size: 3.5rem;
+    text-align: center;
+}
+.page404 p{
+    font-family: Champion, sans-serif;
+    color: white;
+    width: 50vw;
+    text-align: center;
+}
+#harry{
+    position: absolute;
+    width: 43vw;
+    margin-left: 1rem;
+}
+#numbers{
+    /* height: 80vh; */
+    width: 50vw;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .page404{
+        margin: 15vh 0;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .page404{
+        align-items: start;
+        justify-content: space-evenly;
+        /* margin-left: 7rem; */
+        margin: 0 0 10rem 7rem;
+    }
+    .page404 h1{
+        font-size: 7rem;
+    }
+    .page404 h1::after{
+        content: "404";
+        position: relative;
+        top: 9rem;
+        right: 24rem;
+        color: #EF9CA6;
+        font-size: 7rem;
+    }
+    .page404 p{
+        text-align: left;
+
+    }
+    #numbers{
+        height: 60%;
+        position: absolute;
+        right: -1vw;
+    }
+    #harry{
+        right: 25vw;
+        width: 12vw;
+        z-index: 10;
+    }
+}

@@ -1,0 +1,140 @@
+.videoDetails{
+    margin-top: 8vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: roboto, sans-serif;
+    box-sizing: border-box;
+}
+.videoDetails img{
+    width: 100vw;
+}
+.videoDetails h1{
+    color: #fff;
+    text-align: center;
+}
+.Button{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    background-color: #EF9CA6;
+    color: #191919;
+    font-size: 1rem;
+    border: none;
+    border-radius: .5rem;
+    height: 2.5rem;
+    width: 90vw;
+    margin: 1rem 0;
+}
+
+.icons{
+    width: 90vw;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    color: #EF9CA6;
+    font-size: 3rem;
+}
+.icons li{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+li .tooltip{
+    font-size: 1rem;
+    font-weight: bold;
+    width: 7rem;
+    height: 2rem;
+    border-radius: .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    visibility: none;
+    position: absolute;
+    bottom: 3.5rem;
+    background-color: #DF8D8F;
+    color: #191919;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    &::before{
+        position: absolute;
+        content: "";
+        height: 8px;
+        width: 8px;
+        background: #DF8D8F;
+        bottom: -3px;
+        left: 50%;
+        transform: translate(-50%) rotate(45deg);
+        transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+}
+
+.icons li:hover .tooltip{
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.videoDetails .text{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+.videoDetails h2{
+    color: #DF8D8F;
+    text-align: left;   
+}
+.videoDetails p{
+    color: #fff;
+    text-align: left;
+    width: 85vw;
+}
+
+@media screen and (min-width: 1024px) {
+    .videoDetails img{
+        opacity: .7;
+    }
+    .videoDetails .text{
+        width: 40vw;
+        position: absolute;
+        top: 23vh;
+        right: 5vw;
+    }
+    .videoDetails p{
+        width: 80%;
+        text-align: right;
+        position: absolute;
+        top: 8vh;
+        right: 0;
+    }
+    .videoDetails h2{
+        position: absolute;
+        right: 0;
+    }
+    .videoDetails h1{
+        position: absolute;
+        top: 5vh;
+        right: 5vw;
+    }
+    .Button{
+        position: absolute;
+        right: 5vw;
+        top: 45vh;
+        width: 20vw;
+    }
+    .icons{
+        width: 20vw;
+        position: absolute;
+        right: 5vw;
+        top: 10vh;
+    }
+}
