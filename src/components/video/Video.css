@@ -5,7 +5,7 @@
     width: 40vw;
     &:hover, &:focus{
         box-sizing: border-box;
-        border: solid #EF9CA6 .2rem;
+        border: solid .2rem;
     }
 }
 
