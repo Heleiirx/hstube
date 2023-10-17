@@ -18,7 +18,6 @@ function Banner(){
         <div className="banner-main">
             <VideoMid video={video} />
             <Title title={video.title} />
-            <p>{video.description}</p>
             <a href={video.link}>
                 <Button title="Ver video" />
             </a>
